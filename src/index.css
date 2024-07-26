@@ -1,0 +1,92 @@
+/* Estilos Globales */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background 0.5s ease;
+}
+
+body:hover {
+  background: linear-gradient(135deg, #a2c2e6, #f3a0c6);
+}
+
+/* Estilos para el Contenedor Principal */
+
+/* Estilos para los Títulos */
+h1 {
+  font-size: 2rem;
+  margin: 0 0 20px;
+  color: #4a4a4a;
+}
+
+/* Estilos para los Párrafos */
+p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #666;
+}
+
+/* Estilos para el Código */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: #f4f4f4;
+  color: #333;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+code:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  code {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  code {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

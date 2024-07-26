@@ -1,0 +1,153 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px; /* Ancho máximo aumentado para un diseño más rectangular */
+  border-radius: 15px;
+  background: linear-gradient(135deg, #73a5ff, #5477f5);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.city {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weather-description {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 15px 0;
+  transition: transform 0.3s ease;
+}
+
+.weather-icon:hover {
+  transform: scale(1.1);
+}
+
+.bottom {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.details {
+  font-size: 16px;
+  color: #d1e8ff;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 5px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.parameter-label {
+  font-weight: bold;
+}
+
+.parameter-value {
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .weather {
+      padding: 15px;
+      max-width: 90%; /* Ajuste para pantallas más pequeñas */
+  }
+
+  .city {
+      font-size: 22px;
+  }
+
+  .weather-description {
+      font-size: 18px;
+  }
+
+  .weather-icon {
+      width: 80px;
+      height: 80px;
+  }
+
+  .temperature {
+      font-size: 36px;
+  }
+
+  .details {
+      font-size: 14px;
+  }
+
+  .parameter-row {
+      margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather {
+      padding: 10px;
+      max-width: 100%; /* Ajuste completo para pantallas pequeñas */
+  }
+
+  .city {
+      font-size: 20px;
+  }
+
+  .weather-description {
+      font-size: 16px;
+  }
+
+  .weather-icon {
+      width: 90px;
+      height: 90px;
+  }
+
+  .temperature {
+      font-size: 28px;
+  }
+
+  .details {
+      font-size: 12px;
+  }
+
+  .parameter-row {
+      margin: 6px 0;
+      padding: 4px;
+  }
+
+  .parameter-label,
+  .parameter-value {
+      font-size: 14px;
+  }
+}
